@@ -38,6 +38,7 @@ RUN sudo apt-get update && \
 EXPOSE 3000 5000 9000 8080
 RUN sudo npm install -g npm@latest
 RUN sudo npm install --unsafe-perm -g gulp bower grunt grunt-cli yeoman-generator yo generator-angular generator-karma generator-webapp
+RUN cd /projects/
 RUN sudo npm install -g polymer-cli
 
 WORKDIR /projects
